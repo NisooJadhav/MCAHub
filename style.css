@@ -4,7 +4,8 @@
   --fill: transparent;
 }
 .dark-theme {
-  --bcg: #111;
+  --bcg: linear-gradient(to bottom, #000000, #00000099),
+    url("https://i.pinimg.com/originals/f5/f2/74/f5f27448c036af645c27467c789ad759.gif");
   --stroke: #fff;
   --fill: yellow;
 }
@@ -55,10 +56,12 @@ body {
   margin: 0;
   position: relative;
   transition: all 0.3s;
-  background-color: var(--bcg);
+  background: var(--bcg);
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 a {
   padding-bottom: 20px;
